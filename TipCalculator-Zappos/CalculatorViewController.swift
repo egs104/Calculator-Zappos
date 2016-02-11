@@ -80,15 +80,15 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func appendDigit(sender: AnyObject) {
     
-        var digit = sender.currentTitle
+        var digit = sender.currentTitle!
         if isTyping == true {
-            displayLabel.text = "\(displayLabel.text)\(digit)"
+            displayLabel.text = "\(displayLabel.text!)\(digit!)"
         } else {
-            displayLabel.text = digit
+            displayLabel.text = digit!
         }
         
         isTyping = true
-        updateDisplay(Double(displayLabel.text!)!)
+        //updateDisplay(Double(displayLabel.text!)!)
         
     }
     
