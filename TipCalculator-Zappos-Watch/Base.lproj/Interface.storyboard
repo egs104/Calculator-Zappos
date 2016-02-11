@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TipCalculator_Zappos_Watch" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Enter Bill Amount" id="SfN-PC-1BB">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <label alignment="center" text=" " id="Yf1-Wo-T1w">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <group width="1" height="25.5" alignment="center" verticalAlignment="bottom" id="Rrc-Gr-AUV">
+                            <items>
+                                <button width="42" height="25.5" alignment="left" title="1" id="Hu9-pM-GxA">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="button1Pressed" destination="AgC-eL-Hgc" id="gte-2D-yq2"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="center" title="2" id="Pou-wk-4ey">
+                                    <connections>
+                                        <action selector="button2Pressed" destination="AgC-eL-Hgc" id="ghl-7I-jSd"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="26.5" alignment="right" title="3" id="tBY-dc-rZ6">
+                                    <connections>
+                                        <action selector="button3Pressed" destination="AgC-eL-Hgc" id="mvg-zZ-pXL"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="25.5" alignment="center" verticalAlignment="bottom" id="6Zh-MS-x5N">
+                            <items>
+                                <button width="42" height="25.5" alignment="left" title="4" id="OXD-KJ-7tE">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="button4Pressed" destination="AgC-eL-Hgc" id="FMe-ku-Fab"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="center" title="5" id="uuu-hf-jS0">
+                                    <connections>
+                                        <action selector="button5Pressed" destination="AgC-eL-Hgc" id="Z1Y-XP-I1A"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="right" title="6" id="Zei-9v-kKi">
+                                    <connections>
+                                        <action selector="button6Pressed" destination="AgC-eL-Hgc" id="dAR-oP-KBP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="25.5" alignment="center" verticalAlignment="bottom" id="rOF-if-kdD">
+                            <items>
+                                <button width="42" height="25.5" alignment="left" title="7" id="nQv-dh-yDq">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="button7Pressed" destination="AgC-eL-Hgc" id="PZW-Lq-dZZ"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="center" title="8" id="dS2-s5-Qao">
+                                    <connections>
+                                        <action selector="button8Pressed" destination="AgC-eL-Hgc" id="8WD-jx-W9F"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="right" title="9" id="FMR-Kw-XqA">
+                                    <connections>
+                                        <action selector="button9Pressed" destination="AgC-eL-Hgc" id="LDI-FV-fw9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="34.5" alignment="center" verticalAlignment="bottom" id="7xy-Mn-sx7">
+                            <items>
+                                <button width="42" height="25.5" alignment="left" title="." id="0FW-dC-x5p">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="decimalButtonPressed" destination="AgC-eL-Hgc" id="reI-hh-tBe"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="center" title="0" id="I9w-31-T8E">
+                                    <connections>
+                                        <action selector="button0Pressed" destination="AgC-eL-Hgc" id="l8e-CK-UOf"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="25.5" alignment="right" title="&lt;" id="Nex-vK-4LB">
+                                    <connections>
+                                        <action selector="clearButtonPressed" destination="AgC-eL-Hgc" id="woj-Rt-M3f"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="9"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="displayLabel" destination="Yf1-Wo-T1w" id="juC-dB-rV6"/>
+                        <segue destination="MQh-jm-hXP" kind="relationship" relationship="nextPage" id="JUm-CT-Kkl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="262" y="542.25"/>
+        </scene>
+        <!--Tip Interface Controller-->
+        <scene sceneID="u5Z-OR-URJ">
+            <objects>
+                <controller id="MQh-jm-hXP" customClass="TipInterfaceController" customModule="TipCalculator_Zappos_Watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="pnp-iE-WMc">
+                            <items>
+                                <label alignment="left" text="Tip %" textAlignment="center" id="WLV-Q0-AMI">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="right" text="Label" id="3oA-1P-Cdn">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <slider width="1" height="30" alignment="left" value="15" minimum="15" maximum="25" steps="10" id="CDa-XP-WiH">
+                            <connections>
+                                <action selector="tipSliderDidChange:" destination="MQh-jm-hXP" id="rS4-lm-0p5"/>
+                            </connections>
+                        </slider>
+                        <group width="1" height="17" alignment="left" id="L98-gk-NMM">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Tip" id="bLv-eL-wOp">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="KNF-wU-lTb">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="17" alignment="left" id="8gO-Jf-3je">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Total" id="icz-1B-rmw">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" text="Label" id="Hb5-Ih-M6W">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="20" alignment="left" verticalAlignment="bottom" id="Mla-QF-RWS">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Per Person" id="DF1-ap-iuY">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="center" id="95y-cG-YbS">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="center" text="# People" id="GLy-kF-x8z">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <slider width="1" height="30" alignment="left" value="1" minimum="1" maximum="6" steps="5" id="6LT-TP-Vh3">
+                            <connections>
+                                <action selector="peopleSliderDidChange:" destination="MQh-jm-hXP" id="BEV-HN-8Y7"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="peopleLabel" destination="GLy-kF-x8z" id="j4p-Yr-Ud3"/>
+                        <outlet property="perPersonLabel" destination="95y-cG-YbS" id="Zhx-zc-T01"/>
+                        <outlet property="percentLabel" destination="3oA-1P-Cdn" id="Da7-Ly-Mkz"/>
+                        <outlet property="tipLabel" destination="KNF-wU-lTb" id="L7y-zT-y71"/>
+                        <outlet property="tipPercentSlider" destination="CDa-XP-WiH" id="oti-Pq-flh"/>
+                        <outlet property="totalLabel" destination="Hb5-Ih-M6W" id="Wey-WJ-GZT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="480" y="540"/>
+        </scene>
+    </scenes>
+</document>

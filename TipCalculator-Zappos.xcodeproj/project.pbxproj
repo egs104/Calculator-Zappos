@@ -7,14 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A168AACE1C604C4D00C42EDC /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168AACD1C604C4D00C42EDC /* CalculatorViewController.swift */; };
+		A18ED01E1C6D249E00A4513E /* TipInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18ED01D1C6D249E00A4513E /* TipInterfaceController.swift */; };
 		A190DD5B1C592D52006CC922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190DD5A1C592D52006CC922 /* AppDelegate.swift */; };
 		A190DD5D1C592D52006CC922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190DD5C1C592D52006CC922 /* ViewController.swift */; };
 		A190DD601C592D52006CC922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A190DD5E1C592D52006CC922 /* Main.storyboard */; };
 		A190DD621C592D52006CC922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A190DD611C592D52006CC922 /* Assets.xcassets */; };
 		A190DD651C592D52006CC922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A190DD631C592D52006CC922 /* LaunchScreen.storyboard */; };
+		A190DD721C5933CB006CC922 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A190DD701C5933CB006CC922 /* Interface.storyboard */; };
+		A190DD741C5933CB006CC922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A190DD731C5933CB006CC922 /* Assets.xcassets */; };
+		A190DD7B1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A190DD7A1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A190DD801C5933CC006CC922 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190DD7F1C5933CC006CC922 /* InterfaceController.swift */; };
+		A190DD821C5933CC006CC922 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190DD811C5933CC006CC922 /* ExtensionDelegate.swift */; };
+		A190DD841C5933CC006CC922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A190DD831C5933CC006CC922 /* Assets.xcassets */; };
+		A190DD881C5933CC006CC922 /* TipCalculator-Zappos-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A190DD6E1C5933CB006CC922 /* TipCalculator-Zappos-Watch.app */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A190DD7C1C5933CC006CC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A190DD4F1C592D52006CC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A190DD791C5933CC006CC922;
+			remoteInfo = "TipCalculator-Zappos-Watch Extension";
+		};
+		A190DD861C5933CC006CC922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A190DD4F1C592D52006CC922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A190DD6D1C5933CB006CC922;
+			remoteInfo = "TipCalculator-Zappos-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A190DD8C1C5933CC006CC922 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A190DD7B1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A190DD901C5933CC006CC922 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A190DD881C5933CC006CC922 /* TipCalculator-Zappos-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A168AACD1C604C4D00C42EDC /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		A18ED01D1C6D249E00A4513E /* TipInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInterfaceController.swift; sourceTree = "<group>"; };
 		A190DD571C592D52006CC922 /* TipCalculator-Zappos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TipCalculator-Zappos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A190DD5A1C592D52006CC922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A190DD5C1C592D52006CC922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +75,15 @@
 		A190DD611C592D52006CC922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A190DD641C592D52006CC922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A190DD661C592D52006CC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A190DD6E1C5933CB006CC922 /* TipCalculator-Zappos-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TipCalculator-Zappos-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A190DD711C5933CB006CC922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A190DD731C5933CB006CC922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A190DD751C5933CB006CC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A190DD7A1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TipCalculator-Zappos-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A190DD7F1C5933CC006CC922 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A190DD811C5933CC006CC922 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A190DD831C5933CC006CC922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A190DD851C5933CC006CC922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,13 +94,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A190DD771C5933CC006CC922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A168AACF1C604C5B00C42EDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A168AACD1C604C4D00C42EDC /* CalculatorViewController.swift */,
+				A190DD5C1C592D52006CC922 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		A190DD4E1C592D52006CC922 = {
 			isa = PBXGroup;
 			children = (
 				A190DD591C592D52006CC922 /* TipCalculator-Zappos */,
+				A190DD6F1C5933CB006CC922 /* TipCalculator-Zappos-Watch */,
+				A190DD7E1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension */,
 				A190DD581C592D52006CC922 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				A190DD571C592D52006CC922 /* TipCalculator-Zappos.app */,
+				A190DD6E1C5933CB006CC922 /* TipCalculator-Zappos-Watch.app */,
+				A190DD7A1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +136,36 @@
 		A190DD591C592D52006CC922 /* TipCalculator-Zappos */ = {
 			isa = PBXGroup;
 			children = (
+				A168AACF1C604C5B00C42EDC /* Controllers */,
 				A190DD5A1C592D52006CC922 /* AppDelegate.swift */,
-				A190DD5C1C592D52006CC922 /* ViewController.swift */,
 				A190DD5E1C592D52006CC922 /* Main.storyboard */,
 				A190DD611C592D52006CC922 /* Assets.xcassets */,
 				A190DD631C592D52006CC922 /* LaunchScreen.storyboard */,
 				A190DD661C592D52006CC922 /* Info.plist */,
 			);
 			path = "TipCalculator-Zappos";
+			sourceTree = "<group>";
+		};
+		A190DD6F1C5933CB006CC922 /* TipCalculator-Zappos-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				A190DD701C5933CB006CC922 /* Interface.storyboard */,
+				A190DD731C5933CB006CC922 /* Assets.xcassets */,
+				A190DD751C5933CB006CC922 /* Info.plist */,
+			);
+			path = "TipCalculator-Zappos-Watch";
+			sourceTree = "<group>";
+		};
+		A190DD7E1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A190DD7F1C5933CC006CC922 /* InterfaceController.swift */,
+				A18ED01D1C6D249E00A4513E /* TipInterfaceController.swift */,
+				A190DD811C5933CC006CC922 /* ExtensionDelegate.swift */,
+				A190DD831C5933CC006CC922 /* Assets.xcassets */,
+				A190DD851C5933CC006CC922 /* Info.plist */,
+			);
+			path = "TipCalculator-Zappos-Watch Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +178,51 @@
 				A190DD531C592D52006CC922 /* Sources */,
 				A190DD541C592D52006CC922 /* Frameworks */,
 				A190DD551C592D52006CC922 /* Resources */,
+				A190DD901C5933CC006CC922 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A190DD871C5933CC006CC922 /* PBXTargetDependency */,
 			);
 			name = "TipCalculator-Zappos";
 			productName = "TipCalculator-Zappos";
 			productReference = A190DD571C592D52006CC922 /* TipCalculator-Zappos.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A190DD6D1C5933CB006CC922 /* TipCalculator-Zappos-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A190DD8D1C5933CC006CC922 /* Build configuration list for PBXNativeTarget "TipCalculator-Zappos-Watch" */;
+			buildPhases = (
+				A190DD6C1C5933CB006CC922 /* Resources */,
+				A190DD8C1C5933CC006CC922 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A190DD7D1C5933CC006CC922 /* PBXTargetDependency */,
+			);
+			name = "TipCalculator-Zappos-Watch";
+			productName = "TipCalculator-Zappos-Watch";
+			productReference = A190DD6E1C5933CB006CC922 /* TipCalculator-Zappos-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A190DD791C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A190DD891C5933CC006CC922 /* Build configuration list for PBXNativeTarget "TipCalculator-Zappos-Watch Extension" */;
+			buildPhases = (
+				A190DD761C5933CC006CC922 /* Sources */,
+				A190DD771C5933CC006CC922 /* Frameworks */,
+				A190DD781C5933CC006CC922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TipCalculator-Zappos-Watch Extension";
+			productName = "TipCalculator-Zappos-Watch Extension";
+			productReference = A190DD7A1C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +235,12 @@
 				ORGANIZATIONNAME = "Eric Suarez";
 				TargetAttributes = {
 					A190DD561C592D52006CC922 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A190DD6D1C5933CB006CC922 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A190DD791C5933CC006CC922 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +259,8 @@
 			projectRoot = "";
 			targets = (
 				A190DD561C592D52006CC922 /* TipCalculator-Zappos */,
+				A190DD6D1C5933CB006CC922 /* TipCalculator-Zappos-Watch */,
+				A190DD791C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +276,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A190DD6C1C5933CB006CC922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A190DD741C5933CB006CC922 /* Assets.xcassets in Resources */,
+				A190DD721C5933CB006CC922 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A190DD781C5933CC006CC922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A190DD841C5933CC006CC922 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +301,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				A190DD5D1C592D52006CC922 /* ViewController.swift in Sources */,
+				A168AACE1C604C4D00C42EDC /* CalculatorViewController.swift in Sources */,
 				A190DD5B1C592D52006CC922 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A190DD761C5933CC006CC922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A190DD821C5933CC006CC922 /* ExtensionDelegate.swift in Sources */,
+				A190DD801C5933CC006CC922 /* InterfaceController.swift in Sources */,
+				A18ED01E1C6D249E00A4513E /* TipInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A190DD7D1C5933CC006CC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A190DD791C5933CC006CC922 /* TipCalculator-Zappos-Watch Extension */;
+			targetProxy = A190DD7C1C5933CC006CC922 /* PBXContainerItemProxy */;
+		};
+		A190DD871C5933CC006CC922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A190DD6D1C5933CB006CC922 /* TipCalculator-Zappos-Watch */;
+			targetProxy = A190DD861C5933CC006CC922 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A190DD5E1C592D52006CC922 /* Main.storyboard */ = {
@@ -157,6 +346,14 @@
 				A190DD641C592D52006CC922 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A190DD701C5933CB006CC922 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A190DD711C5933CB006CC922 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -265,6 +462,66 @@
 			};
 			name = Release;
 		};
+		A190DD8A1C5933CC006CC922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TipCalculator-Zappos-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.TipCalculator-Zappos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A190DD8B1C5933CC006CC922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TipCalculator-Zappos-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.TipCalculator-Zappos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A190DD8E1C5933CC006CC922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TipCalculator_Zappos_Watch_Extension;
+				INFOPLIST_FILE = "TipCalculator-Zappos-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.TipCalculator-Zappos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A190DD8F1C5933CC006CC922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TipCalculator_Zappos_Watch_Extension;
+				INFOPLIST_FILE = "TipCalculator-Zappos-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eric.TipCalculator-Zappos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +541,25 @@
 				A190DD6B1C592D52006CC922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A190DD891C5933CC006CC922 /* Build configuration list for PBXNativeTarget "TipCalculator-Zappos-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A190DD8A1C5933CC006CC922 /* Debug */,
+				A190DD8B1C5933CC006CC922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A190DD8D1C5933CC006CC922 /* Build configuration list for PBXNativeTarget "TipCalculator-Zappos-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A190DD8E1C5933CC006CC922 /* Debug */,
+				A190DD8F1C5933CC006CC922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
